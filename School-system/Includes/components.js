@@ -7,18 +7,20 @@ class topHeader extends HTMLElement {
       margin: 0;
       padding: 0;
     }
-    header {
+    section.header {
       padding: 15px 5px;
       background-color: #FFF;
       backdrop-filter: blur(2px);
       width: 100%;
       position: fixed;
+      top: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border: 1px solid black;
     }
-    header h3 {
-      vertical-alin: center;
+    section.header h3 {
+      vertical-align: center;
     }
     nav {
       display: none;
@@ -63,18 +65,14 @@ class topHeader extends HTMLElement {
     }
     .menu-icon {
      display: block;
-     position: relative;*/
+     position: relative;
      z-index: 3;
      font-size: 32px;
      padding: 1px 6px;
     }
-    @font-face {
-      font-family: Poppins;
-      src: url(/Assets/Poppins-Medium.ttf)
-    }
   </style>
   
-<header>
+<section class="header">
  
     <h3><span class="material-symbols-rounded icon">school</span>EduGrade</h3>
   <nav>
@@ -86,7 +84,7 @@ class topHeader extends HTMLElement {
     </ul>
   </nav>
   <h1><span class="material-symbols-rounded menu-icon" >menu</span></h1>
-</header
+</section>
     `;
     const navLinks = document.querySelector("nav");
     const menu = document.querySelector(".menu-icon");

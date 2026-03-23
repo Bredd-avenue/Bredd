@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --text-grey: #5F6368;
+  --light-grey: #F8F9FA;
+  --dark: #081226;
+  --white: #FFF;
+  --light-blue: #0062BD;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../Assets/Poppins-Medium.ttf);
+}
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+main {
+ margin-top: 100px;
+ padding: 20px;
+}
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
