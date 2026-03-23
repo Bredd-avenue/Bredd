@@ -2,16 +2,100 @@ class topHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-      header { background: grey;}
-    </style>
-    
-    <header>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Admission</a>
-    </header>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 15px 5px;
+      background-color: #FFF;
+      backdrop-filter: blur(2px);
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h3 {
+      vertical-alin: center;
+    }
+    nav {
+      display: none;
+      background-color: #FFF;
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 65%;
+      border-top-left-radius: 10px;
+      top: 0;
+      transition: .5s display;
+    }
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      width: 100%;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+      width: 100%;
+      display: inline-block;
+      margin: 0;
+      padding: 10px;
+    }
+    li a {
+      text-decoration: none;
+      color: #5F6368;
+      font-weight: bolder;
+      padding: 10px;
+      display: inline-block;
+      width: 100%;
+      font-family: Poppins;
+      border-radius: 6px;
+    }
+    nav ul li a.login {
+      color: #FFF;
+      background-color: #0063BD;
+    }
+    nav.active {
+      display: block;
+    }
+    .menu-icon {
+     display: block;
+     position: relative;*/
+     z-index: 3;
+     font-size: 32px;
+     padding: 1px 6px;
+    }
+    @font-face {
+      font-family: Poppins;
+      src: url(/Assets/Poppins-Medium.ttf)
+    }
+  </style>
+  
+<header>
+ 
+    <h3><span class="material-symbols-rounded icon">school</span>EduGrade</h3>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#" class="login">Login</a></li>
+    </ul>
+  </nav>
+  <h1><span class="material-symbols-rounded menu-icon" >menu</span></h1>
+</header
     `;
+    const navLinks = document.querySelector("nav");
+    const menu = document.querySelector(".menu-icon");
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menu.textContent = navLinks.classList.contains('active') ? 'close' : 'menu';
+      })
   }
+  
 }
 
 customElements.define('main-header', topHeader)
@@ -21,10 +105,10 @@ class SchoolFooter extends HTMLElement {
     this.innerHTML = `
       <style>
         .main-footer {
-          background: #202124;
-          color: #ffffff;
+          background: #FFF;
+          color: #5F6368;
           padding: 40px 20px;
-          font-family: sans-serif;
+          font-family: Poppins;
           margin-top: 50px;
         }
         .footer-content {
@@ -35,12 +119,13 @@ class SchoolFooter extends HTMLElement {
           gap: 30px;
         }
         .footer-section h3 {
-          color: #4285f4;
+          color: #081226;
           margin-bottom: 15px;
           font-size: 1.2rem;
+          vertical-align: center;
         }
         .footer-section p, .footer-section a {
-          color: #bdc1c6;
+          color: #5F6368;
           text-decoration: none;
           font-size: 0.9rem;
           line-height: 1.6;
@@ -57,23 +142,25 @@ class SchoolFooter extends HTMLElement {
       <footer class="main-footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>About Our School</h3>
-            <p>Providing quality education and digital excellence since 2024.</p>
+            <h3><span class="material-symbols-rounded">school</span>Education</h3>
+            <p>Leading the way in digital school management and result tracking for a transparent and effective educational experience.</p>
+            <div><span class="material-symbols-rounded" style="color: inherit; padding: 8px; border-radius: 5px; background-color: #E8F0FE;">share</span> <span class="material-symbols-rounded">at</span>
+            </div>
           </div>
           <div class="footer-section">
             <h3>Quick Links</h3>
             <a href="admission.html">Admissions</a><br>
-            <a href="portal.html">Student Portal</a><br>
+            <a href="about.html">About institution</a><br>
             <a href="contact.html">Contact Us</a>
           </div>
           <div class="footer-section">
             <h3>Contact</h3>
-            <p>Email: info@school.edu</p>
+            <p><span class="material-symbols-rounded">email</span>Email: info@school.edu</p>
             <p>Phone: +234 800 000 0000</p>
           </div>
         </div>
         <div class="footer-bottom">
-          &copy; 2026 Modern School Web App. Built with ❤️ for the Project.
+          &copy; 2026 Bredd-Avenue Management System. Built with ❤️ powered by Bredd.
         </div>
       </footer>
     `;
