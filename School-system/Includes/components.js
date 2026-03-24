@@ -17,7 +17,7 @@ class topHeader extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid black;
+      border: 1px solid var(--text-grey);
     }
     section.header h3 {
       vertical-align: center;
@@ -69,6 +69,9 @@ class topHeader extends HTMLElement {
      z-index: 3;
      font-size: 32px;
      padding: 1px 6px;
+    }
+    .icon {
+      color: var(--light-blue);
     }
   </style>
   
@@ -158,7 +161,7 @@ class SchoolFooter extends HTMLElement {
           </div>
         </div>
         <div class="footer-bottom">
-          &copy; 2026 Bredd-Avenue Management System. Built with ❤️ powered by Bredd.
+          &copy; 2026 Bredd-Avenue Management System. Powered by Bredd.
         </div>
       </footer>
     `;
