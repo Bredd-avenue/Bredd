@@ -83,7 +83,7 @@ class topHeader extends HTMLElement {
       <li><a href="#" class="login">Login</a></li>
     </ul>
   </nav>
-  <h1><span class="material-symbols-rounded menu-icon" >menu</span></h1>
+  <span class="material-symbols-rounded menu-icon" >menu</span>
 </section>
     `;
     const navLinks = document.querySelector("nav");
