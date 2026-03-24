@@ -17,6 +17,14 @@ html {
   font-family: Poppins;
   src: url(../Assets/Poppins-Medium.ttf);
 }
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../Assets/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../Assets/Poppins-SemiBold.ttf);
+}
 body {
   font-family: Poppins;
   margin: 0;
@@ -29,4 +37,8 @@ main {
 .banner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+h1 {
+  font-size: 32px;
+  font-family: PoppinsSemiBold;
 }
