@@ -29,6 +29,7 @@ body {
   font-family: Poppins;
   margin: 0;
   padding: 0;
+  background-color: var(--light-grey);
 }
 main {
  margin-top: 70px;
@@ -39,6 +40,7 @@ main {
   padding: 20px;
   padding-top: 50px;
   background-color: var(--light-grey);
+  text-align: center;
 }
 .water-mark {
   text-align: center;
@@ -52,16 +54,98 @@ main {
 h1 {
   font-size: 32px;
   font-family: PoppinsSemiBold;
+  margin: 8px 0;
 }
 p {
   color: var(--text-grey);
 }
+.join {
+  display: block;
+  font-weight: bolder;
+  color: var(--white);
+  background-color: var(--light-blue);
+  border-radius: 8px;
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  margin: 8px auto;
+  box-shadow: 0px 1px 5px var(--light-blue);
+}
+.admission {
+  display: block;
+  font-weight: bolder;
+  background-color: var(--white);
+  border-radius: 8px;
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid black;
+  margin: 8px auto;
+}
+.banner-img {
+  max-width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.banner-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .values {
   padding: 40px 20px;
+  background-color: var(--white);
 }
 .values .values-box {
   border-radius: 6px;
   background-color: var(--light-grey);
-  padding: 16px;
+  padding: 20px;
   margin: 20px auto;
+}
+.values .values-box h3 {
+  margin: 8px auto;
+}
+.valueIcon {
+  color: var(--light-blue);
+  padding: 16px;
+  font-size: 32px;
+  border-radius: 8px;
+  background-color: #0062BD15;
+}
+.qualifications {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+}
+.qualifications .qualities {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+}
+.qualifications .qualities h1 {
+  color: var(--light-blue);
+}
+.CTA {
+  background-color: var(--dark);
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+}
+.CTA h1 {
+  color: var(--white);
+}
+.CTA .apply {
+  text-align: inherit;
+  color: var(--white);
+  border-radius: 6px;
+  padding: 10px 30px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #0062BD;
+  border: none;
+  background-color: var(--light-blue);
 }

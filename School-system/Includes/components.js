@@ -72,6 +72,9 @@ class topHeader extends HTMLElement {
     }
     .icon {
       color: var(--light-blue);
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #0062BD09;
     }
   </style>
   
