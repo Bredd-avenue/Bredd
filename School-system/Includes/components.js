@@ -141,6 +141,12 @@ class SchoolFooter extends HTMLElement {
           padding-top: 20px;
           font-size: 0.8rem;
         }
+        .footerIcon {
+          padding: 10px;
+          border-radius: 16px;
+          color: var(--text-grey);
+          background-color: #0062BD15;
+        }
       </style>
 
       <footer class="main-footer">
@@ -148,7 +154,7 @@ class SchoolFooter extends HTMLElement {
           <div class="footer-section">
             <h3><span class="material-symbols-rounded">school</span>Education</h3>
             <p>Leading the way in digital school management and result tracking for a transparent and effective educational experience.</p>
-            <div><span class="material-symbols-rounded" style="color: inherit; padding: 8px; border-radius: 5px; background-color: #E8F0FE;">share</span> <span class="material-symbols-rounded">at</span>
+            <div><span class="material-symbols-rounded footerIcon">share</span> <span class="material-symbols-rounded footerIcon">alternate_email</span>
             </div>
           </div>
           <div class="footer-section">
@@ -159,7 +165,7 @@ class SchoolFooter extends HTMLElement {
           </div>
           <div class="footer-section">
             <h3>Contact</h3>
-            <p><span class="material-symbols-rounded">email</span>Email: info@school.edu</p>
+            <p><span class="material-symbols-rounded">mail:</span>Email: info@school.edu</p>
             <p>Phone: +234 800 000 0000</p>
           </div>
         </div>

@@ -128,7 +128,7 @@ p {
 .qualifications {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
 .qualifications .qualities {
   background-color: var(--white);
