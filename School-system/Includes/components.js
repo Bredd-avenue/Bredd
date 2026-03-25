@@ -10,7 +10,7 @@ class topHeader extends HTMLElement {
     section.header {
       padding: 15px 5px;
       background-color: #FFF;
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(5px);
       width: 100%;
       position: fixed;
       top: 0;
