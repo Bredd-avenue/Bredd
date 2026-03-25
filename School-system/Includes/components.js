@@ -143,7 +143,7 @@ class SchoolFooter extends HTMLElement {
         }
         .footerIcon {
           padding: 10px;
-          border-radius: 16px;
+          border-radius: 20px;
           color: var(--text-grey);
           background-color: #0062BD15;
         }
