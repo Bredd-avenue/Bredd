@@ -86,7 +86,7 @@ class topHeader extends HTMLElement {
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Admission</a></li>
-      <li><a href="#" class="login">Login</a></li>
+      <li><a href="Auth/login.html" class="login">Login</a></li>
     </ul>
   </nav>
   <span class="material-symbols-rounded menu-icon" >menu</span>
@@ -147,6 +147,10 @@ class SchoolFooter extends HTMLElement {
           color: var(--text-grey);
           background-color: #0062BD15;
         }
+        .cont {
+          color: var(--light-blue);
+          transform: translateY(6px);
+        }
       </style>
 
       <footer class="main-footer">
@@ -165,8 +169,8 @@ class SchoolFooter extends HTMLElement {
           </div>
           <div class="footer-section">
             <h3>Contact</h3>
-            <p><span class="material-symbols-rounded">mail:</span>Email: info@school.edu</p>
-            <p>Phone: +234 800 000 0000</p>
+            <p><span class="material-symbols-rounded cont">mail</span>Email: info@school.edu</p>
+            <p><span class="material-symbols-rounded cont">phone</span>Phone: +234 800 000 0000</p>
           </div>
         </div>
         <div class="footer-bottom">

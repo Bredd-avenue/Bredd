@@ -128,13 +128,14 @@ p {
 .qualifications {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .qualifications .qualities {
   background-color: var(--white);
   border-radius: 8px;
   padding: 16px;
   margin: 10px;
+  text-align: center;
 }
 .qualifications .qualities h1 {
   color: var(--light-blue);
