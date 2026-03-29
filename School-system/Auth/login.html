@@ -37,10 +37,25 @@
      font-family: Poppins;
      padding: 5px;
     }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     h3.prev {
       display: flex;
       align-items: center;
       padding: 5px;
+    }
+    .help .material-symbols-rounded {
+      color: var(--white);
+      background-color: var(--blue);
+      padding: 4px;
+      border-radius: 50px;
+      border: 8px solid lightblue;
+    }
+    .help {
+      color: var(--text-grey);
     }
     main {
       display: grid;
@@ -63,7 +78,7 @@
       color: var(--text-grey);
       margin: 8px;
     }
-    .buttons {
+    /*.buttons {
       margin-bottom: 5px;
       background-color: var(--light-grey);
       padding: 2px;
@@ -84,17 +99,18 @@
     .buttons button:first-child {
       background-color: var(--white);
       color: var(--blue);
-    }
+    }*/
     form {
       text-align: left;
       margin-top: 30px;
     }
     input {
-      border: 1px solid black;
-      font-size: 18px;
+      border: none;
+      font-size: 16px;
       padding: 3px;
       outline: none;
       background-color: transparent;
+      font-family: Poppins;
     }
     .inputs {
       background-color: var(--light-grey);
@@ -138,6 +154,8 @@
 <body>
   <header>
     <h3 onclick="history.back()" class="prev"><span class="material-symbols-rounded">arrow_back_IOS</span> Back</h3>
+    
+    <h3 onclick="" class="prev help">Help    <span class="material-symbols-rounded">question_mark</span></h3>
   </header>
   
   <main>
@@ -145,17 +163,17 @@
       <h1>Welcome Back</h1>
       <p>Login to access the management system</p>
       
-      <section class="buttons">
+      <!--<section class="buttons">
         <button type="button">Student</button>
         <button type="button">Teacher</button>
         <button type="button">Admin</button>
-      </section>
+      </section>-->
       
       <form action="login.php" autocomplete="on" accept-charset="utf-8">
      <label for="email">Email or Username</label>
      <section class="inputs">
        <span class="material-symbols-rounded">person</span>
-       <input type="email" name="email" id="email" placeholder="e.g johndoe@school.edu" required>
+       <input type="email" name="email" id="email" placeholder="e.g johndoe@school.edu" style="width: 100%;" required>
      </section>
      
      <label for="password">Password</label>
@@ -178,7 +196,7 @@
     <main-footer>
     </main-footer>
   </footer>
-  <script src="Includes/components.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="../Includes/components.js" type="text/javascript" charset="utf-8" defer></script>
 </body>
 
 </html>
