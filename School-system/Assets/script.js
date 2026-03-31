@@ -2,12 +2,21 @@ let icon = document.getElementById('eye-icon');
 let psw = document.getElementById('password');
 
 icon.addEventListener('click', () => {
-  if (psw.type === 'password' && icon.classList === 'visibiloty') {
+  if (psw.type === 'password' && icon.textContent === 'visibility') {
     psw.type = 'text';
-    icon.classList = 'visibiloty-off';
+    icon.textContent = 'visibility_off';
   } else {
-    psw.type = 'text';
-    icon.classList = 'visibility';
+    psw.type = 'password';
+    icon.textContent = 'visibility';
   }
-  console.log('hello')
 })
+
+
+/*const eyeIcon = document.getElementById('eye-icon');
+const passwordInput = document.getElementById('password');
+
+eyeIcon.addEventListener('click', () => {
+    const isPassword = passwordInput.type === 'password';
+    passwordInput.type = isPassword ? 'text' : 'password';
+    eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+});*/
