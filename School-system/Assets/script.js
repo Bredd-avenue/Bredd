@@ -5,4 +5,4 @@ icon.addEventListener('click', () => {
   const isPassword = psw.type === 'password';
   psw.type = isPassword ? 'text' : 'password';
   icon.textContent = isPassword ? 'visibility' : 'visibility_off';
-})
+});
