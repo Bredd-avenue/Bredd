@@ -1,22 +1,8 @@
-let icon = document.getElementById('eye-icon');
-let psw = document.getElementById('password');
+const icon = document.getElementById('eye-icon');
+const psw = document.getElementById('password');
 
 icon.addEventListener('click', () => {
-  if (psw.type === 'password' && icon.textContent === 'visibility') {
-    psw.type = 'text';
-    icon.textContent = 'visibility_off';
-  } else {
-    psw.type = 'password';
-    icon.textContent = 'visibility';
-  }
+  const isPassword = psw.type === 'password';
+  psw.type = isPassword ? 'text' : 'password';
+  icon.textContent = isPassword ? 'visibility' : 'visibility_off';
 })
-
-
-/*const eyeIcon = document.getElementById('eye-icon');
-const passwordInput = document.getElementById('password');
-
-eyeIcon.addEventListener('click', () => {
-    const isPassword = passwordInput.type === 'password';
-    passwordInput.type = isPassword ? 'text' : 'password';
-    eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
-});*/
