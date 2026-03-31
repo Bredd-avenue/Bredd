@@ -7,3 +7,4 @@ icon.addEventListener('click', () => {
   psw.type = isPassword ? 'text' : 'password';
   icon.textContent = isPassword ? 'visibility' : 'visibility_off';
 });
+
