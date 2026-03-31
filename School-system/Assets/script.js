@@ -1,3 +1,4 @@
+//Toggling visibility icon for password
 const icon = document.getElementById('eye-icon');
 const psw = document.getElementById('password');
 
