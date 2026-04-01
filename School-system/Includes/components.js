@@ -174,7 +174,7 @@ class SchoolFooter extends HTMLElement {
           </div>
         </div>
         <div class="footer-bottom">
-          &copy; 2026 Bredd-Avenue Management System. Powered by Bredd.
+          &copy; 2026 Bredd-Avenue Management System. Powered by <span style="color: #0062BD;">Bredd</span>.
         </div>
       </footer>
     `;
