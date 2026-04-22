@@ -9,7 +9,7 @@ class topHeader extends HTMLElement {
     }
     section.header {
       padding: 15px 5px;
-      background-color: #FFF;
+      background-color: rgba(100%, 100%, 100%, 0.5);
       backdrop-filter: blur(5px);
       width: 100%;
       position: fixed;
@@ -81,7 +81,7 @@ class topHeader extends HTMLElement {
 <section class="header">
  
     <h3><span class="material-symbols-rounded icon">school</span>EduGrade</h3>
-  <nav>
+  <div id="back"><nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -89,6 +89,7 @@ class topHeader extends HTMLElement {
       <li><a href="Auth/login.html" class="login">Login</a></li>
     </ul>
   </nav>
+  </div>
   <span class="material-symbols-rounded menu-icon" >menu</span>
 </section>
     `;
@@ -96,6 +97,7 @@ class topHeader extends HTMLElement {
     const menu = document.querySelector(".menu-icon");
     menu.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+      document.getElementById('back').classList.toggle('show');
       menu.textContent = navLinks.classList.contains('active') ? 'close' : 'menu';
       })
   }
