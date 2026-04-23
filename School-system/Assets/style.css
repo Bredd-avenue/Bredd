@@ -72,6 +72,9 @@ p {
   margin: 8px auto;
   box-shadow: 0px 1px 5px var(--light-blue);
 }
+.join:hover {
+  box-shadow: none;
+}
 .admission {
   display: block;
   font-weight: bolder;
